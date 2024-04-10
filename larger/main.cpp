@@ -5,6 +5,12 @@ using namespace std;
 #define rep(i, n) for (int i = 0; i < (int)n; i++)
 #define all(x) (x).begin(), (x).end()
 
+void out(int x) {
+  if (x) puts("Yes");
+  else puts("No");
+  exit(0);
+}
+
 int main() {
   string n, m;
   cin >> n >> m;
