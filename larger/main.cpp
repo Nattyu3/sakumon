@@ -44,11 +44,9 @@ int main() {
     if (!ch) t += m[i];
     else tt += m[i];
   }
-  reverse(all(s)); reverse(all(t));
-  int zs = s.size(), zt = t.size();
-  if (zs < zt) rep(i, zt-zs) s += '0';
-  if (zs > zt) rep(i, zs-zt) t += '0';
-  reverse(all(s)); reverse(all(t));
+
+  out(mi ^ (s.size() < t.size());
+
   int zss = ss.size(), ztt = tt.size();
   if (zss < ztt) rep(i, ztt-zss) ss += '0';
   if (ztt > zss) rep(i, zss-ztt) tt += '0';
@@ -57,7 +55,6 @@ int main() {
   if (s < t) ch = false;
   else if (s == t) if(ss < tt) ch = false;
   
-  if ((ch ^ mi)) cout << "Yes" << endl;
-  else cout << "No" << endl;
+  out(ch ^ mi);
   return 0;
 }
